@@ -1,0 +1,18 @@
+{
+  "name": "nextcommerce",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "client": "cd client && bun run dev",
+    "server": "cd server && bun run dev",
+    "sync": "node chokidar.js",
+    "dev": "concurrently \"bun run server\" \"bun run client\" \"bun run sync\""
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "chokidar": "^4.0.1"
+  }
+}

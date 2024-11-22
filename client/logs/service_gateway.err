@@ -1,0 +1,8 @@
+2024-11-07 15:43:28 420:  ⚠ Port 3000 is in use, trying 3001 instead.
+2024-11-07 15:43:37 781:  ⚠ Port 3000 is in use, trying 3001 instead.
+2024-11-07 15:43:44 262: [Error: EPERM: operation not permitted, open 'D:\webdev\projects\NEXT Commerce\client\.next\trace'] {
+2024-11-07 15:43:44 262:   errno: -4048,
+2024-11-07 15:43:44 262:   code: 'EPERM',
+2024-11-07 15:43:44 262:   syscall: 'open',
+2024-11-07 15:43:44 262:   path: 'D:\\webdev\\projects\\NEXT Commerce\\client\\.next\\trace'
+2024-11-07 15:43:44 262: }
