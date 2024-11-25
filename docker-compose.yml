@@ -1,0 +1,28 @@
+version: '3.8'
+
+services:
+  server:
+    build:
+      context: ./server # Path to the server Dockerfile directory
+      dockerfile: Dockerfile
+    ports:
+      - "4000:4000" # Map host port 4000 to container port 4000
+    volumes:
+      - ./server:/app # Mount server folder for live updates during development
+      - /app/node_modules # Prevent overwriting node_modules
+    environment:
+      NODE_ENV: production # Set environment variable
+    command: ["node", "dist/server.js"] # Start server
+
+  client:
+    build:
+      context: ./client # Path to the client Dockerfile directory
+      dockerfile: Dockerfile
+    ports:
+      - "3000:3000" # Map host port 3000 to container port 3000
+    volumes:
+      - ./client:/app # Mount client folder for live updates during development
+      - /app/node_modules # Prevent overwriting node_modules
+    environment:
+      NODE_ENV: production # Set environment variable
+    command: ["npm", "start"] # Start client

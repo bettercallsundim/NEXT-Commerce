@@ -1,3 +1,3 @@
-import { IIP, IOption, IPoll, IVote } from "./types";
+// import { IIP, IOption, IPoll, IVote } from "./types";
 
-export { IIP, IOption, IPoll, IVote };
+// export { IIP, IOption, IPoll, IVote };
